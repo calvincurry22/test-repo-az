@@ -43,7 +43,7 @@ export function UserProvider(props) {
 
     const getUserProfile = (firebaseUserId) => {
         return getToken().then((token) =>
-            fetch(`api/user/${firebaseUserId}`, {
+            fetch(`https://foodlocker20200910132921.azurewebsites.net/api/user/${firebaseUserId}`, {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -53,7 +53,7 @@ export function UserProvider(props) {
 
     const getAllUserProfiles = () => {
         return getToken().then((token) =>
-            fetch(apiUrl, {
+            fetch(`https://foodlocker20200910132921.azurewebsites.net${apiUrl}`, {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -64,7 +64,7 @@ export function UserProvider(props) {
     }
     const saveUser = (user) => {
         return getToken().then((token) =>
-            fetch(apiUrl, {
+            fetch(`https://foodlocker20200910132921.azurewebsites.net${apiUrl}`, {
                 method: "POST",
                 headers: {
                     Authorization: `Bearer ${token}`,
@@ -76,7 +76,7 @@ export function UserProvider(props) {
 
     const updateUser = (user) =>
         getToken().then((token) =>
-            fetch(`${apiUrl}/${user.id}`, {
+            fetch(`https://foodlocker20200910132921.azurewebsites.net${apiUrl}/${user.id}`, {
                 method: "PUT",
                 headers: {
                     Authorization: `Bearer ${token}`,
