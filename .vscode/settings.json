@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3bad4f71-abb6-44a4-8d5d-77ce09c56061/resourceGroups/myResourceGroup/providers/Microsoft.Web/sites/foodlocker",
+    "appService.deploySubpath": "."
+}

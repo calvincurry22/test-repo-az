@@ -1,0 +1,22 @@
+
+.editDeleteButtonsContainer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editButton {
+    margin-right: 10% !important;
+    margin-left: 10% !important;
+    margin-bottom: 3% !important;
+}
+
+.deleteButton {
+    margin-bottom: 3% !important;
+}
+
+.listToggleButton {
+    margin-right: 2% !important;
+    margin-left: 2% !important;
+}
